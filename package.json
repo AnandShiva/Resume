@@ -4,7 +4,9 @@
   "description": "a resume to create resume",
   "main": "index.html",
   "scripts": {
-    "test": "cd .. "
+    "test": "cd .. ",
+    "start": "nodemon --exec babel-node server.js --ignore public/",
+    "dev": "webpack -wd"
   },
   "repository": {
     "type": "git",
@@ -25,10 +27,13 @@
   },
   "homepage": "https://github.com/AnandShiva/Resume#readme",
   "dependencies": {
+    "ejs": "^2.5.6",
     "express": "^4.15.3",
+    "json-loader": "^0.5.4",
     "mongo": "^0.1.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "semantic-ui-react": "^0.70.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
